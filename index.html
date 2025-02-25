@@ -3,35 +3,265 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Trillo &mdash; All-in-one app</title>
   </head>
   <body>
-    <section class="main">
-      <section class="container">
-        <section class="header">
-          <div class="header_logo"></div>
-          <div class="header_search">
-            <p>Search hotels</p>
-            <p>💎</p>
+    <section class="container">
+      <section class="header">
+        <div class="header_logo">
+          <img class="header_logo-img" src="img/logo.png" alt="Trillo logo" />
+        </div>
+        <form class="search">
+          <input class="search_input" type="text" placeholder="Search hotels" />
+          <button class="search_btn">
+            <svg class="search_icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="user">
+          <div class="user_box">
+            <svg class="user_icon">
+              <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user_num">7</span>
           </div>
-          <div class="header_icons">
-            <p>💎</p>
-            <p>💎</p>
-            <div class="header_pic">
-              <p class="header_pic-jonas"></p>
-              <p>jonas</p>
-            </div>
+          <div class="user_box">
+            <svg class="user_icon">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user_num">13</span>
           </div>
-        </section>
-        <!-- header -->
-
-        <section class="sidebar"></section>
-        <!-- sidebar -->
+          <figure class="user_fig">
+            <img class="user_img" src="img/userH.jpg" alt="User photo" />
+            <figcaption>Hammed</figcaption>
+          </figure>
+        </div>
       </section>
-      <!-- container -->
+      <!-- header -->
+      <section class="content">
+        <section class="sidebar">
+          <ul class="sidebar_list">
+            <li class="sidebar_item sidebar_item--active">
+              <svg class="sidebar_icon">
+                <use xlink:href="img/sprite.svg#icon-key"></use>
+              </svg>
+              <a href="#" class="sidebar_link">car rental</a>
+            </li>
+            <li class="sidebar_item">
+              <svg class="sidebar_icon">
+                <use xlink:href="img/sprite.svg#icon-home"></use>
+              </svg>
+              <a class="sidebar_link" href="#">hotel</a>
+            </li>
+            <li class="sidebar_item">
+              <svg class="sidebar_icon">
+                <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+              </svg>
+              <a class="sidebar_link" href="#">flight</a>
+            </li>
+            <li class="sidebar_item">
+              <svg class="sidebar_icon">
+                <use xlink:href="img/sprite.svg#icon-map"></use>
+              </svg>
+              <a class="sidebar_link" href="#">tours</a>
+            </li>
+          </ul>
+          <p class="copyright">
+            &copy; 2025 by Hammed. All right reserved. <br />
+            Original design by Jonas.
+          </p>
+        </section>
+        <!-- sidebar -->
+        <section class="hotel-view">
+          <div class="gallery">
+            <figure>
+              <img
+                class="gallery_img"
+                src="img/hotel-1.jpg"
+                alt="hotel pictures"
+              />
+            </figure>
+            <figure>
+              <img
+                class="gallery_img"
+                src="img/hotel-2.jpg"
+                alt="hotel pictures"
+              />
+            </figure>
+            <figure>
+              <img
+                class="gallery_img"
+                src="img/hotel-3.jpg"
+                alt="hotel pictures"
+              />
+            </figure>
+          </div>
+          <!-- gallery -->
+          <div class="details">
+            <div class="top">
+              <div class="company">
+                <h2 class="company_name">qmed global ventures</h2>
+                <svg class="company_icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="company_icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="company_icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="company_icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="company_icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+              </div>
+              <!-- company -->
+              <div class="location">
+                <svg class="location_icon">
+                  <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                </svg>
+                <button class="btn-inline">Lagos, Nigeria</button>
+              </div>
+              <!-- location -->
+              <div class="rating">
+                <span class="rating_value">9.0</span>
+                <span class="rating_count">500 votes</span>
+              </div>
+            </div>
+            <!-- top -->
+            <div class="info">
+              <div class="info-main">
+                <div class="description">
+                  <div class="description_details">
+                    <p class="description_text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Animi nisi dignissimos debitis ratione sapiente saepe.
+                      Accusantium cumque, quas, ut corporis incidunt deserunt
+                      quae architecto voluptate.
+                    </p>
+                    <p class="description_text">
+                      Accusantium cumque, quas, ut corporis incidunt deserunt
+                      quae architecto voluptate delectus, inventore iure aliquid
+                      aliquam.
+                    </p>
+                  </div>
+                  <!-- description_details -->
+                  <ul class="description_list">
+                    <li class="description_item">Close to the beach</li>
+                    <li class="description_item">Breakfast included</li>
+                    <li class="description_item">Free airport shuttle</li>
+                    <li class="description_item">Free wifi in all rooms</li>
+                    <li class="description_item">Perfect for families</li>
+                    <li class="description_item">
+                      Air conditioning and heating
+                    </li>
+                    <li class="description_item">Pets allowed</li>
+                    <li class="description_item">We speak all languages</li>
+                  </ul>
+                  <div class="customers">
+                    <p class="customers_text">
+                      Lucy and 3 other friends recommend this hotel.
+                    </p>
+                    <figure class="customers_pics">
+                      <img
+                        class="customers_pic"
+                        src="img/user-1.jpg"
+                        alt="customer picture"
+                      />
+                      <img
+                        class="customers_pic"
+                        src="img/user-2.jpg"
+                        alt="customer picture"
+                      />
+                      <img
+                        class="customers_pic"
+                        src="img/user-3.jpg"
+                        alt="customer picture"
+                      />
+                      <img
+                        class="customers_pic"
+                        src="img/user-4.jpg"
+                        alt="customer picture"
+                      />
+                    </figure>
+                  </div>
+                  <!-- customers -->
+                </div>
+                <!-- description -->
+                <div class="testimonials">
+                  <figure class="testimonial">
+                    <blockquote class="testimonial_text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Fuga doloremque architecto dicta animi, totam, itaque
+                      officia ex.
+                    </blockquote>
+                    <div class="testimonial_info">
+                      <figcaption class="testimonial_details">
+                        <img
+                          class="testimonial_pic"
+                          src="img/user-5.jpg"
+                          alt="user"
+                        />
+                        <div class="testimonial_author">
+                          <p class="testimonial_name">jame thomas</p>
+                          <p class="testimonial_date">March 15th 2020</p>
+                        </div>
+                      </figcaption>
+                      <p class="testimonial_rating">7.8</p>
+                    </div>
+                  </figure>
+                  <figure class="testimonial">
+                    <blockquote class="testimonial_text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Fuga doloremque architecto dicta animi.
+                    </blockquote>
+                    <div class="testimonial_info">
+                      <div class="testimonial_details">
+                        <img
+                          class="testimonial_pic"
+                          src="img/user-6.jpg"
+                          alt="user"
+                        />
+                        <div class="testimonial_author">
+                          <p class="testimonial_name">smith mary</p>
+                          <p class="testimonial_date">Dec 18th 2022</p>
+                        </div>
+                      </div>
+                      <p class="testimonial_rating">9.0</p>
+                    </div>
+                  </figure>
+                  <button class="btn-inline">
+                    <span class="testimonial_btn">Show all</span> &rarr;
+                  </button>
+                </div>
+                <!-- testimonial -->
+              </div>
+              <!-- info-main -->
+
+              <div class="cta">
+                <p class="cta_text">
+                  Good news! We have 4 free rooms for your selected dates!
+                </p>
+                <button class="cta_btn">
+                  <p class="cta_book cta_book-top">only 4 rooms left</p>
+                  <p class="cta_book cta_book-bottom">book now</p>
+                </button>
+              </div>
+            </div>
+            <!-- info -->
+          </div>
+          <!-- details -->
+        </section>
+        <!-- main -->
+      </section>
+      <!-- content -->
     </section>
-    <!-- main -->
+    <!-- container -->
   </body>
 </html>
