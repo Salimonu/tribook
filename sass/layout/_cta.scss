@@ -1,0 +1,72 @@
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background-color: $color-gray-light-2;
+  box-shadow: $shadow-light;
+
+  &_text {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: $color-gray-dark;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  &_btn {
+    padding: 1rem 4rem;
+    background-image: linear-gradient(
+      to right,
+      $color-secondary,
+      $color-secondary-dark
+    );
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.4s;
+
+    &:hover {
+      background-image: linear-gradient(
+        to left,
+        $color-secondary,
+        $color-secondary-dark
+      );
+    }
+
+    &:hover > .cta_book-top {
+      transform: translateY(50%);
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &:hover > .cta_book-bottom {
+      transform: translateY(3rem);
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    &:focus {
+      animation: pulsate 1s infinite;
+    }
+  }
+
+  &_book {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: #fff;
+    transition: all 0.4s;
+
+    &-top {
+      transform: translateY(-3rem);
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    &-bottom {
+      transform: translateY(-50%);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+:root {
+  // custom variables
+  // NB: does not work in media queries likewise rem units.
+  --color-primary: red;
+}
+
+$color-secondary: #7bb47b;
+$color-secondary-dark: #269d26;
+$color-secondary-light: #a8d1a8;
+$color-secondary-light-1: #ebeeeb;
+
+$color-gray: #aaa;
+$color-gray-light: #ddd;
+$color-gray-light-1: #777;
+$color-gray-light-2: #eee;
+$color-gray-dark: #3b3a3a;
+
+$color-white: #fff;
+$color-black: #000;
+
+$shadow-light: 0 2rem 5rem
+  rgba(
+    $color: #000000,
+    $alpha: 0.08,
+  );
+
+$thin-line: 1px solid $color-gray-light;
+
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.25em; //900px
+$bp-small: 38.2em; //611px
+$bp-smallest: 31.25em; //500px

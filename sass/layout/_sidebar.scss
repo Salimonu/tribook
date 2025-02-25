@@ -1,0 +1,100 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0;
+
+  flex: 0 0 15%;
+  background-color: $color-gray-dark;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0;
+  }
+
+  &_list {
+    color: $color-gray-light;
+    list-style: none;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: flex;
+    }
+  }
+
+  &_item {
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    text-align: center;
+
+    position: relative;
+    display: flex;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 3px;
+      background-color: $color-secondary;
+      transform: scaleY(0);
+      transition: transform 0.2s, width 0.3s cubic-bezier(1, 0, 0, 1) 0.2s,
+        background-color 0.2s;
+    }
+
+    &--active::before,
+    &:hover::before {
+      transform: scaleY(1);
+      width: 100%;
+    }
+
+    &:active::before {
+      background-color: $color-secondary-light;
+    }
+  }
+
+  &_link:link,
+  &_link:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: currentColor;
+    position: relative;
+    z-index: 10;
+  }
+
+  &_icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.5rem;
+    fill: currentColor;
+    position: relative;
+    z-index: 10;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 0;
+    }
+  }
+}
+
+.copyright {
+  font-size: 1.5rem;
+  color: $color-gray-light;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+}
